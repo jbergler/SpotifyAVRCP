@@ -37,7 +37,6 @@ public class Spotify implements IXposedHookLoadPackage {
         PackageInfo pi = context.getPackageManager().getPackageInfo(lpparam.packageName, 0);
 
         String versionName = pi.versionName;
-        int versionCode = pi.versionCode;
 
         XposedBridge.log("SpotifyAVRCP: We're in Spotify [" + versionName + "]");
 
